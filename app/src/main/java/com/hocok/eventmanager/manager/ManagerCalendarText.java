@@ -1,9 +1,12 @@
-package com.hocok.eventmanager;
+package com.hocok.eventmanager.manager;
 
 import android.content.Context;
 import android.widget.TextView;
 
+import com.hocok.eventmanager.MyCallBack;
+import com.hocok.eventmanager.R;
 import com.hocok.eventmanager.db.ManagerDB;
+import com.hocok.eventmanager.manager.DateManager;
 
 import java.util.ArrayList;
 
@@ -39,7 +42,7 @@ public class ManagerCalendarText{
             } else {
                 allDate = date + textDay.getText().toString();
             }
-            if (days.contains(allDate) && !(allDate.equals(date+DateManager.numberDay)) ) {
+            if (days.contains(allDate) && !(allDate.equals(date+ DateManager.numberDay)) ) {
                 textDay.setBackgroundResource(R.drawable.outline_grey);
             }
         }

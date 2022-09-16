@@ -1,4 +1,4 @@
-package com.hocok.eventmanager;
+package com.hocok.eventmanager.model;
 
 import java.io.Serializable;
 

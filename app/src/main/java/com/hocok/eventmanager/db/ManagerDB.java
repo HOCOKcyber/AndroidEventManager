@@ -1,15 +1,13 @@
 package com.hocok.eventmanager.db;
 
-import android.content.ContentUris;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
-import com.hocok.eventmanager.Event;
+import com.hocok.eventmanager.model.Event;
 
 import java.util.ArrayList;
-import java.util.Calendar;
 
 public class ManagerDB {
     private Context context;

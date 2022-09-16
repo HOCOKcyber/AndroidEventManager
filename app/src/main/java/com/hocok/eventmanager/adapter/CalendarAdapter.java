@@ -9,8 +9,8 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.hocok.eventmanager.DateManager;
-import com.hocok.eventmanager.ManagerCalendarText;
+import com.hocok.eventmanager.manager.DateManager;
+import com.hocok.eventmanager.manager.ManagerCalendarText;
 import com.hocok.eventmanager.MyCallBack;
 import com.hocok.eventmanager.R;
 

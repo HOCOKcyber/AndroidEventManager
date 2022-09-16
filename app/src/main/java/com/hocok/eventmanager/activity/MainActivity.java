@@ -1,4 +1,4 @@
-package com.hocok.eventmanager;
+package com.hocok.eventmanager.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -12,9 +12,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.hocok.eventmanager.MyCallBack;
+import com.hocok.eventmanager.R;
 import com.hocok.eventmanager.adapter.CalendarAdapter;
 import com.hocok.eventmanager.adapter.EventAdapter;
 import com.hocok.eventmanager.db.ManagerDB;
+import com.hocok.eventmanager.manager.DateManager;
+import com.hocok.eventmanager.manager.ManagerCalendarText;
+import com.hocok.eventmanager.model.Event;
 
 import java.util.ArrayList;
 import java.util.Calendar;

@@ -1,17 +1,18 @@
-package com.hocok.eventmanager;
+package com.hocok.eventmanager.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
-import android.text.Editable;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.hocok.eventmanager.R;
 import com.hocok.eventmanager.db.ManagerDB;
+import com.hocok.eventmanager.model.Event;
 
 public class EventComment extends AppCompatActivity {
     Event event;

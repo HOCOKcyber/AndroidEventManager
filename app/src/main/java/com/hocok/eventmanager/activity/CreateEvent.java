@@ -1,4 +1,4 @@
-package com.hocok.eventmanager;
+package com.hocok.eventmanager.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,7 +10,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.hocok.eventmanager.R;
 import com.hocok.eventmanager.db.ManagerDB;
+import com.hocok.eventmanager.manager.DateManager;
 
 public class CreateEvent extends AppCompatActivity {
     String year;

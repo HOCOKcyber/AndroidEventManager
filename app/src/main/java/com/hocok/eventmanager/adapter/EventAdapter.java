@@ -11,8 +11,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.hocok.eventmanager.Event;
-import com.hocok.eventmanager.EventComment;
+import com.hocok.eventmanager.model.Event;
 import com.hocok.eventmanager.MyCallBack;
 import com.hocok.eventmanager.R;
 
