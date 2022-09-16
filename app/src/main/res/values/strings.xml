@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Мой Календарь</string>
+    <string name="planDay">План дня</string>
+    <string name="textPlanDay">План дня</string>
+    <string name="HintPlanDay">Введите свой план на день</string>
+    <string name="back">Назад</string>
+    <string name="safe">Сохранить</string>
+    <string name="change">Изменить</string>
+</resources>

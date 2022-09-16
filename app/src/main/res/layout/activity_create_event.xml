@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateEvent">
+
+
+    <TextView
+        android:id="@+id/textDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12 Августа 2022"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:textSize="25sp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/editTextNameEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Название"
+        android:layout_below="@id/textDate"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/outline_black"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/editTextTimeStartEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Начало"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/outline_black"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="@color/black"
+        android:layout_below="@id/editTextNameEvent"/>
+
+    <EditText
+        android:id="@+id/editTextTimeRemindEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Сообщить за * часов"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/outline_black"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="@color/black"
+        android:layout_below="@id/editTextTimeStartEvent" />
+
+    <EditText
+        android:id="@+id/editTextCommentEvent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Коментарий"
+        android:gravity="top"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/outline_black"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="@color/black"
+        android:layout_below="@id/editTextTimeRemindEvent"
+        android:layout_above="@id/btnSafeDateEvent"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/btnSafeDateEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/safe"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/outline_black"
+        android:layout_marginBottom="15dp"
+        android:layout_above="@id/btnBackDateEvent"
+        />
+
+    <Button
+        android:id="@+id/btnBackDateEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/outline_black"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>

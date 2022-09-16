@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EventComment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutEventComment"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/outline_black"
+        android:padding="10dp"
+        android:layout_marginStart="30dp">
+
+        <TextView
+            android:id="@+id/textNameEventInComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Название мероприятия"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:fontFamily="@font/montserrat_bold" />
+
+        <TextView
+            android:id="@+id/textTimeEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="24:24 12 августа 2022"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:fontFamily="@font/montserrat_medium"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextComment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="15dp"
+        android:hint="Комментарий"
+        android:gravity="top"
+        android:padding="5dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/layoutEventComment"
+        android:background="@drawable/outline_black"
+        android:layout_above="@+id/btnChange"
+        android:layout_marginBottom="15dp"/>
+
+    <Button
+        android:id="@+id/btnChange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/change"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/outline_black"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/btnBackEventComment"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/btnBackEventComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:background="@drawable/outline_black"
+        android:layout_marginStart="40dp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"/>
+
+
+
+</RelativeLayout>
